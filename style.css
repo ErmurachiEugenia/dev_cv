@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{background-color: #DCE775;}
+#bloc_page
+{background-color: #DCE775;
+width: 70%;
+margin: auto;}
+
+/*introdution*/
+.intro
+{
+background-color:#DCE775;
+display: flex;
+position: static;}
+.intro img
+{
+max-width: 50%; 
+max-height: 50%;
+}
+
+.moi
+{
+background-color: #DCE775;
+text-align: center;
+font-size: 2em;
+min-height: 150px;
+}
+aside
+{margin: auto}
+
+h1, h2, h6
+{color:#6a1b9a;}
+
+a:hover
+{cursor: pointer;}
+/*je cherche*/
+.recherche
+{margin-top: 10px;
+ }
+.recherche img
+{ width: 100%; 
+height: 100%; 
+position: relative;
+margin-bottom: 20px;
+}
+
+.recherche p
+{
+position : absolute;
+color: #263238;
+font-size: 1.5em;
+margin-top: 22%;
+margin-right: 50%;
+margin-left: 10%;
+text-align: left;
+z-index: 1;
+margin-bottom: 20px;
+background-color: #80cbc4;
+}
+
+/*competences*/
+h2
+{text-align: center;}
+.compet
+{
+display: flex;
+}
+.compet img
+{max-width:50%;
+ max-height:50%}
+
+table
+{
+
+  border-collapse: collapse;
+  border: hidden;
+
+  
+}
+tr
+{
+border: hidden;}
+
+td
+{background-color:#80cbc4;
+  font-size: 1.3em;
+  width:50%;
+  border: hidden;
+
+ 
+  }
+td img
+{background-color:#80cbc4;
+width:10%;
+height: auto;}
+
+
+
+/*timeline*/
+.xp
+{display: flex;
+flex-direction: row}
+
+.xp img
+{height: 50%;
+width: 50%;
+margin-top: 10%}
+
+.timeline
+{
+  width:50%;
+  background-color:#DCE775;
+  color:#000;
+  padding:10px 10px;
+  margin: auto;
+}
+.timeline ul
+{
+  list-style-type:none;
+  border-left:2px solid #212121;
+  padding:10px 5px;
+}
+.timeline ul li /*les bouttons*/
+{
+  padding: 5px 5px;
+  position:relative;
+  cursor:pointer;
+  transition:.5s;
+}
+.timeline ul li span
+{
+  display:inline-block;
+  padding:2px 5px;
+  font-size:15px;
+  text-align:center;
+}
+.timeline ul li .content h3
+{
+  color:#34ace0;
+  font-size:17px;
+  padding-top:5px;
+}
+.timeline ul li .content p{
+  padding:5px 0px 15px 0px;
+  font-size:15px;
+}
+.timeline ul li:before{ /*les bouttons*/
+  position:absolute;
+  content:'';
+  width:10px;
+  height:10px;
+  background-color:#d84315;
+  border-radius:50%;
+  left:-6px;
+  top:28px;
+  transition:.5s;
+}
+.timeline ul li:hover{
+  cursor: pointer;
+  background-color:#DCE775;
+}
+.timeline ul li:hover:before{
+  cursor: pointer;
+  background-color:#ff860e;
+ 
+}
+/*projets*/
+.projets img
+{
+border-radius:5px;
+max-width: 130px;}
+.projets
+{
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+width:100%;
+font-size: 0.8em;
+text-align: center;
+}
+.projets img:hover
+{cursor: pointer;
+border: 1px solid #635172}
+
+
+/*responsive*/
+@media (max-width:1000px)
+{ .intro
+  {display:flex;
+  flex-direction: column;}
+  .intro img
+  {position: center;
+    max-width: 100%;
+    max-height: 100%;}
+.recherche p
+{margin-right: 35% ;
+ font-size: 1em;
+ }
+.card
+{width:100%}
+table
+{display:flex-wrap}
+td
+{font-size: 0.9em}
+.compet
+{display:flex;
+flex-direction: column-reverse;}
+
+.compet img
+{max-width: 100%;
+max-height: 100%}
+.timeline{
+width:90%;
+padding:30px 5px 30px 10px;
+}
+.timeline ul li .content h3{
+color:#34ace0;
+font-size:15px;
+}
+
+.xp img
+{ display: none;
+}
+.projets
+{flex-wrap: wrap;}
+}
